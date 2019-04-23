@@ -1,7 +1,7 @@
 # spdxValidator
 
-validate licence of dependent nodemodule licences in nodejs app
+check if dependent modules in nodejs app is valid as per spdx list of valid licences.
 
 
 ## Run using command
-jarPath="path to spdx jar file" forceValidate=true spdxValidator
+jarPath="path to spdx jar file" spdxValidator
