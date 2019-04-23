@@ -1,0 +1,22 @@
+{
+  "name": "spdxvalidator",
+  "version": "1.0.2",
+  "description": "validate module licence against spdx list of valid licences.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "deepak.r.poojari@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "license-checker": "25.0.1",
+    "spdx-license-ids": "3.0.4"
+  },
+  "bin": {
+    "spdxvalidator": "./bin/spdxvalidator"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deepak6446/spdxValidator.git"
+  }
+}

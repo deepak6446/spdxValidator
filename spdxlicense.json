@@ -1,0 +1,452 @@
+{
+  "abbrev@1.1.1": {
+    "licenses": "ISC",
+    "repository": "https://github.com/isaacs/abbrev-js",
+    "publisher": "Isaac Z. Schlueter",
+    "email": "i@izs.me",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/abbrev",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/abbrev/LICENSE"
+  },
+  "ansi-styles@3.2.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/chalk/ansi-styles",
+    "publisher": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/ansi-styles",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/ansi-styles/license"
+  },
+  "array-find-index@1.0.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/sindresorhus/array-find-index",
+    "publisher": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/array-find-index",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/array-find-index/license"
+  },
+  "asap@2.0.6": {
+    "licenses": "MIT",
+    "repository": "https://github.com/kriskowal/asap",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/asap",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/asap/LICENSE.md"
+  },
+  "balanced-match@1.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/juliangruber/balanced-match",
+    "publisher": "Julian Gruber",
+    "email": "mail@juliangruber.com",
+    "url": "http://juliangruber.com",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/balanced-match",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/balanced-match/LICENSE.md"
+  },
+  "brace-expansion@1.1.11": {
+    "licenses": "MIT",
+    "repository": "https://github.com/juliangruber/brace-expansion",
+    "publisher": "Julian Gruber",
+    "email": "mail@juliangruber.com",
+    "url": "http://juliangruber.com",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/brace-expansion",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/brace-expansion/LICENSE"
+  },
+  "chalk@2.4.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/chalk/chalk",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/chalk",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/chalk/license"
+  },
+  "color-convert@1.9.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/Qix-/color-convert",
+    "publisher": "Heather Arthur",
+    "email": "fayearthur@gmail.com",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/color-convert",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/color-convert/LICENSE"
+  },
+  "color-name@1.1.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/dfcreative/color-name",
+    "publisher": "DY",
+    "email": "dfcreative@gmail.com",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/color-name",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/color-name/LICENSE"
+  },
+  "concat-map@0.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/substack/node-concat-map",
+    "publisher": "James Halliday",
+    "email": "mail@substack.net",
+    "url": "http://substack.net",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/concat-map",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/concat-map/LICENSE"
+  },
+  "debug@3.2.6": {
+    "licenses": "MIT",
+    "repository": "https://github.com/visionmedia/debug",
+    "publisher": "TJ Holowaychuk",
+    "email": "tj@vision-media.ca",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/debug",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/debug/LICENSE"
+  },
+  "debuglog@1.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/sam-github/node-debuglog",
+    "publisher": "Sam Roberts",
+    "email": "sam@strongloop.com",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/debuglog",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/debuglog/LICENSE"
+  },
+  "dezalgo@1.0.3": {
+    "licenses": "ISC",
+    "repository": "https://github.com/npm/dezalgo",
+    "publisher": "Isaac Z. Schlueter",
+    "email": "i@izs.me",
+    "url": "http://blog.izs.me/",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/dezalgo",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/dezalgo/LICENSE"
+  },
+  "escape-string-regexp@1.0.5": {
+    "licenses": "MIT",
+    "repository": "https://github.com/sindresorhus/escape-string-regexp",
+    "publisher": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/escape-string-regexp",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/escape-string-regexp/license"
+  },
+  "fs.realpath@1.0.0": {
+    "licenses": "ISC",
+    "repository": "https://github.com/isaacs/fs.realpath",
+    "publisher": "Isaac Z. Schlueter",
+    "email": "i@izs.me",
+    "url": "http://blog.izs.me/",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/fs.realpath",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/fs.realpath/LICENSE"
+  },
+  "glob@7.1.3": {
+    "licenses": "ISC",
+    "repository": "https://github.com/isaacs/node-glob",
+    "publisher": "Isaac Z. Schlueter",
+    "email": "i@izs.me",
+    "url": "http://blog.izs.me/",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/glob",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/glob/LICENSE"
+  },
+  "graceful-fs@4.1.15": {
+    "licenses": "ISC",
+    "repository": "https://github.com/isaacs/node-graceful-fs",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/graceful-fs",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/graceful-fs/LICENSE"
+  },
+  "has-flag@3.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/sindresorhus/has-flag",
+    "publisher": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/has-flag",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/has-flag/license"
+  },
+  "hosted-git-info@2.7.1": {
+    "licenses": "ISC",
+    "repository": "https://github.com/npm/hosted-git-info",
+    "publisher": "Rebecca Turner",
+    "email": "me@re-becca.org",
+    "url": "http://re-becca.org",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/hosted-git-info",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/hosted-git-info/LICENSE"
+  },
+  "inflight@1.0.6": {
+    "licenses": "ISC",
+    "repository": "https://github.com/npm/inflight",
+    "publisher": "Isaac Z. Schlueter",
+    "email": "i@izs.me",
+    "url": "http://blog.izs.me/",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/inflight",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/inflight/LICENSE"
+  },
+  "inherits@2.0.3": {
+    "licenses": "ISC",
+    "repository": "https://github.com/isaacs/inherits",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/inherits",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/inherits/LICENSE"
+  },
+  "json-parse-better-errors@1.0.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/zkat/json-parse-better-errors",
+    "publisher": "Kat Marchán",
+    "email": "kzm@zkat.tech",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/json-parse-better-errors",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/json-parse-better-errors/LICENSE.md"
+  },
+  "license-checker@25.0.1": {
+    "licenses": "BSD-3-Clause",
+    "repository": "https://github.com/davglass/license-checker",
+    "publisher": "Dav Glass",
+    "email": "davglass@gmail.com",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/license-checker",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/license-checker/LICENSE"
+  },
+  "minimatch@3.0.4": {
+    "licenses": "ISC",
+    "repository": "https://github.com/isaacs/minimatch",
+    "publisher": "Isaac Z. Schlueter",
+    "email": "i@izs.me",
+    "url": "http://blog.izs.me",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/minimatch",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/minimatch/LICENSE"
+  },
+  "minimist@0.0.8": {
+    "licenses": "MIT",
+    "repository": "https://github.com/substack/minimist",
+    "publisher": "James Halliday",
+    "email": "mail@substack.net",
+    "url": "http://substack.net",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/minimist",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/minimist/LICENSE"
+  },
+  "mkdirp@0.5.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/substack/node-mkdirp",
+    "publisher": "James Halliday",
+    "email": "mail@substack.net",
+    "url": "http://substack.net",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/mkdirp",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/mkdirp/LICENSE"
+  },
+  "ms@2.1.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/zeit/ms",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/ms",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/ms/license.md"
+  },
+  "nopt@4.0.1": {
+    "licenses": "ISC",
+    "repository": "https://github.com/npm/nopt",
+    "publisher": "Isaac Z. Schlueter",
+    "email": "i@izs.me",
+    "url": "http://blog.izs.me/",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/nopt",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/nopt/LICENSE"
+  },
+  "normalize-package-data@2.5.0": {
+    "licenses": "BSD-2-Clause",
+    "repository": "https://github.com/npm/normalize-package-data",
+    "publisher": "Meryn Stol",
+    "email": "merynstol@gmail.com",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/normalize-package-data",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/normalize-package-data/LICENSE"
+  },
+  "once@1.4.0": {
+    "licenses": "ISC",
+    "repository": "https://github.com/isaacs/once",
+    "publisher": "Isaac Z. Schlueter",
+    "email": "i@izs.me",
+    "url": "http://blog.izs.me/",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/once",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/once/LICENSE"
+  },
+  "os-homedir@1.0.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/sindresorhus/os-homedir",
+    "publisher": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/os-homedir",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/os-homedir/license"
+  },
+  "os-tmpdir@1.0.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/sindresorhus/os-tmpdir",
+    "publisher": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/os-tmpdir",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/os-tmpdir/license"
+  },
+  "osenv@0.1.5": {
+    "licenses": "ISC",
+    "repository": "https://github.com/npm/osenv",
+    "publisher": "Isaac Z. Schlueter",
+    "email": "i@izs.me",
+    "url": "http://blog.izs.me/",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/osenv",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/osenv/LICENSE"
+  },
+  "path-is-absolute@1.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/sindresorhus/path-is-absolute",
+    "publisher": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/path-is-absolute",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/path-is-absolute/license"
+  },
+  "path-parse@1.0.6": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jbgutierrez/path-parse",
+    "publisher": "Javier Blanco",
+    "email": "http://jbgutierrez.info",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/path-parse",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/path-parse/LICENSE"
+  },
+  "read-installed@4.0.3": {
+    "licenses": "ISC",
+    "repository": "https://github.com/isaacs/read-installed",
+    "publisher": "Isaac Z. Schlueter",
+    "email": "i@izs.me",
+    "url": "http://blog.izs.me/",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/read-installed",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/read-installed/LICENSE"
+  },
+  "read-package-json@2.0.13": {
+    "licenses": "ISC",
+    "repository": "https://github.com/npm/read-package-json",
+    "publisher": "Isaac Z. Schlueter",
+    "email": "i@izs.me",
+    "url": "http://blog.izs.me/",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/read-package-json",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/read-package-json/LICENSE"
+  },
+  "readdir-scoped-modules@1.0.2": {
+    "licenses": "ISC",
+    "repository": "https://github.com/npm/readdir-scoped-modules",
+    "publisher": "Isaac Z. Schlueter",
+    "email": "i@izs.me",
+    "url": "http://blog.izs.me/",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/readdir-scoped-modules",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/readdir-scoped-modules/LICENSE"
+  },
+  "resolve@1.10.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/browserify/resolve",
+    "publisher": "James Halliday",
+    "email": "mail@substack.net",
+    "url": "http://substack.net",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/resolve",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/resolve/LICENSE"
+  },
+  "semver@5.7.0": {
+    "licenses": "ISC",
+    "repository": "https://github.com/npm/node-semver",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/semver",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/semver/LICENSE"
+  },
+  "slash@1.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/sindresorhus/slash",
+    "publisher": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "http://sindresorhus.com",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/slash",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/slash/readme.md"
+  },
+  "slide@1.1.6": {
+    "licenses": "ISC",
+    "repository": "https://github.com/isaacs/slide-flow-control",
+    "publisher": "Isaac Z. Schlueter",
+    "email": "i@izs.me",
+    "url": "http://blog.izs.me/",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/slide",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/slide/LICENSE"
+  },
+  "spdx-compare@1.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/kemitchell/spdx-compare.js",
+    "publisher": "Kyle E. Mitchell",
+    "email": "kyle@kemitchell.com",
+    "url": "https://kemitchell.com",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/spdx-compare",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/spdx-compare/LICENSE.md"
+  },
+  "spdx-correct@3.1.0": {
+    "licenses": "Apache-2.0",
+    "repository": "https://github.com/jslicense/spdx-correct.js",
+    "publisher": "Kyle E. Mitchell",
+    "email": "kyle@kemitchell.com",
+    "url": "https://kemitchell.com",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/spdx-correct",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/spdx-correct/LICENSE"
+  },
+  "spdx-exceptions@2.2.0": {
+    "licenses": "CC-BY-3.0",
+    "repository": "https://github.com/kemitchell/spdx-exceptions.json",
+    "publisher": "The Linux Foundation",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/spdx-exceptions",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/spdx-exceptions/README.md"
+  },
+  "spdx-expression-parse@3.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jslicense/spdx-expression-parse.js",
+    "publisher": "Kyle E. Mitchell",
+    "email": "kyle@kemitchell.com",
+    "url": "http://kemitchell.com",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/spdx-expression-parse",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/spdx-expression-parse/LICENSE"
+  },
+  "spdx-license-ids@3.0.4": {
+    "licenses": "CC0-1.0",
+    "repository": "https://github.com/shinnn/spdx-license-ids",
+    "publisher": "Shinnosuke Watanabe",
+    "url": "https://github.com/shinnn",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/spdx-license-ids",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/spdx-license-ids/README.md"
+  },
+  "spdx-ranges@2.1.0": {
+    "licenses": "CC-BY-3.0",
+    "repository": "https://github.com/kemitchell/spdx-ranges.js",
+    "publisher": "The Linux Foundation",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/spdx-ranges",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/spdx-ranges/LICENSE.md"
+  },
+  "spdx-satisfies@4.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/kemitchell/spdx-satisfies.js",
+    "publisher": "Kyle E. Mitchell",
+    "email": "kyle@kemitchell.com",
+    "url": "https://kemitchell.com",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/spdx-satisfies",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/spdx-satisfies/LICENSE"
+  },
+  "supports-color@5.5.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/chalk/supports-color",
+    "publisher": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/supports-color",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/supports-color/license"
+  },
+  "treeify@1.1.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/notatestuser/treeify",
+    "publisher": "Luke Plaster",
+    "email": "notatestuser@gmail.com",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/treeify",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/treeify/LICENSE"
+  },
+  "util-extend@1.0.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/isaacs/util-extend",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/util-extend",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/util-extend/LICENSE"
+  },
+  "validate-npm-package-license@3.0.4": {
+    "licenses": "Apache-2.0",
+    "repository": "https://github.com/kemitchell/validate-npm-package-license.js",
+    "publisher": "Kyle E. Mitchell",
+    "email": "kyle@kemitchell.com",
+    "url": "https://kemitchell.com",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/validate-npm-package-license",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/validate-npm-package-license/LICENSE"
+  },
+  "wrappy@1.0.2": {
+    "licenses": "ISC",
+    "repository": "https://github.com/npm/wrappy",
+    "publisher": "Isaac Z. Schlueter",
+    "email": "i@izs.me",
+    "url": "http://blog.izs.me/",
+    "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/wrappy",
+    "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/wrappy/LICENSE"
+  }
+}

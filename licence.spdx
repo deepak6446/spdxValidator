@@ -1,0 +1,819 @@
+
+SPDXVersion: SPDX-2.1
+DataLicense: CC0-1.0
+DocumentNamespace: http://organization.com/spdx/SPDXRef-BIO-1.0-05aadas11-83ab-258fac9fb4d3
+DocumentName: BIO-1.0
+
+## Creation Information
+Creator: Organization: organization (foss-compliance@organization.com)
+Created: 2019-02-05T13:46:42Z
+
+
+
+## Package Information  (Third Party)
+PackageName: abbrev
+SPDXID: SPDXRef-abbrev-.a.-1.1.1
+PackageVersion: 1.1.1
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/isaacs/abbrev-js
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-abbrev-.a.-1.1.1 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: ansi-styles
+SPDXID: SPDXRef-ansi-styles-.a.-3.2.1
+PackageVersion: 3.2.1
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/chalk/ansi-styles
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-ansi-styles-.a.-3.2.1 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: find-index
+SPDXID: SPDXRef-array-find-index-.a.-1.0.2
+PackageVersion: 1.0.2
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/sindresorhus/array-find-index
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-array-find-index-.a.-1.0.2 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: asap
+SPDXID: SPDXRef-asap-.a.-2.0.6
+PackageVersion: 2.0.6
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/kriskowal/asap
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-asap-.a.-2.0.6 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: balanced-match
+SPDXID: SPDXRef-balanced-match-.a.-1.0.0
+PackageVersion: 1.0.0
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/juliangruber/balanced-match
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-balanced-match-.a.-1.0.0 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: brace-expansion
+SPDXID: SPDXRef-brace-expansion-.a.-1.1.11
+PackageVersion: 1.1.11
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/juliangruber/brace-expansion
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-brace-expansion-.a.-1.1.11 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: chalk
+SPDXID: SPDXRef-chalk-.a.-2.4.2
+PackageVersion: 2.4.2
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/chalk/chalk
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-chalk-.a.-2.4.2 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: color-convert
+SPDXID: SPDXRef-color-convert-.a.-1.9.3
+PackageVersion: 1.9.3
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/Qix-/color-convert
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-color-convert-.a.-1.9.3 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: color-name
+SPDXID: SPDXRef-color-name-.a.-1.1.3
+PackageVersion: 1.1.3
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/dfcreative/color-name
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-color-name-.a.-1.1.3 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: concat-map
+SPDXID: SPDXRef-concat-map-.a.-0.0.1
+PackageVersion: 0.0.1
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/substack/node-concat-map
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-concat-map-.a.-0.0.1 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: debug
+SPDXID: SPDXRef-debug-.a.-3.2.6
+PackageVersion: 3.2.6
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/visionmedia/debug
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-debug-.a.-3.2.6 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: debuglog
+SPDXID: SPDXRef-debuglog-.a.-1.0.1
+PackageVersion: 1.0.1
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/sam-github/node-debuglog
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-debuglog-.a.-1.0.1 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: dezalgo
+SPDXID: SPDXRef-dezalgo-.a.-1.0.3
+PackageVersion: 1.0.3
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/npm/dezalgo
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-dezalgo-.a.-1.0.3 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: string-regexp
+SPDXID: SPDXRef-escape-string-regexp-.a.-1.0.5
+PackageVersion: 1.0.5
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/sindresorhus/escape-string-regexp
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-escape-string-regexp-.a.-1.0.5 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: realpath
+SPDXID: SPDXRef-fs.realpath-.a.-1.0.0
+PackageVersion: 1.0.0
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/isaacs/fs.realpath
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-fs.realpath-.a.-1.0.0 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: glob
+SPDXID: SPDXRef-glob-.a.-7.1.3
+PackageVersion: 7.1.3
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/isaacs/node-glob
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-glob-.a.-7.1.3 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: graceful-fs
+SPDXID: SPDXRef-graceful-fs-.a.-4.1.15
+PackageVersion: 4.1.15
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/isaacs/node-graceful-fs
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-graceful-fs-.a.-4.1.15 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: has-flag
+SPDXID: SPDXRef-has-flag-.a.-3.0.0
+PackageVersion: 3.0.0
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/sindresorhus/has-flag
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-has-flag-.a.-3.0.0 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: git-info
+SPDXID: SPDXRef-hosted-git-info-.a.-2.7.1
+PackageVersion: 2.7.1
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/npm/hosted-git-info
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-hosted-git-info-.a.-2.7.1 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: inflight
+SPDXID: SPDXRef-inflight-.a.-1.0.6
+PackageVersion: 1.0.6
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/npm/inflight
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-inflight-.a.-1.0.6 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: inherits
+SPDXID: SPDXRef-inherits-.a.-2.0.3
+PackageVersion: 2.0.3
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/isaacs/inherits
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-inherits-.a.-2.0.3 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: better-errors
+SPDXID: SPDXRef-json-parse-better-errors-.a.-1.0.2
+PackageVersion: 1.0.2
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/zkat/json-parse-better-errors
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-json-parse-better-errors-.a.-1.0.2 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: license-checker
+SPDXID: SPDXRef-license-checker-.a.-25.0.1
+PackageVersion: 25.0.1
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/davglass/license-checker
+PackageLicenseConcluded: BSD-3-Clause
+PackageLicenseDeclared: BSD-3-Clause
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-license-checker-.a.-25.0.1 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: minimatch
+SPDXID: SPDXRef-minimatch-.a.-3.0.4
+PackageVersion: 3.0.4
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/isaacs/minimatch
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-minimatch-.a.-3.0.4 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: minimist
+SPDXID: SPDXRef-minimist-.a.-0.0.8
+PackageVersion: 0.0.8
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/substack/minimist
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-minimist-.a.-0.0.8 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: mkdirp
+SPDXID: SPDXRef-mkdirp-.a.-0.5.1
+PackageVersion: 0.5.1
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/substack/node-mkdirp
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-mkdirp-.a.-0.5.1 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: ms
+SPDXID: SPDXRef-ms-.a.-2.1.1
+PackageVersion: 2.1.1
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/zeit/ms
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-ms-.a.-2.1.1 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: nopt
+SPDXID: SPDXRef-nopt-.a.-4.0.1
+PackageVersion: 4.0.1
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/npm/nopt
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-nopt-.a.-4.0.1 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: package-data
+SPDXID: SPDXRef-normalize-package-data-.a.-2.5.0
+PackageVersion: 2.5.0
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/npm/normalize-package-data
+PackageLicenseConcluded: BSD-2-Clause
+PackageLicenseDeclared: BSD-2-Clause
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-normalize-package-data-.a.-2.5.0 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: once
+SPDXID: SPDXRef-once-.a.-1.4.0
+PackageVersion: 1.4.0
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/isaacs/once
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-once-.a.-1.4.0 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: os-homedir
+SPDXID: SPDXRef-os-homedir-.a.-1.0.2
+PackageVersion: 1.0.2
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/sindresorhus/os-homedir
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-os-homedir-.a.-1.0.2 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: os-tmpdir
+SPDXID: SPDXRef-os-tmpdir-.a.-1.0.2
+PackageVersion: 1.0.2
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/sindresorhus/os-tmpdir
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-os-tmpdir-.a.-1.0.2 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: osenv
+SPDXID: SPDXRef-osenv-.a.-0.1.5
+PackageVersion: 0.1.5
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/npm/osenv
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-osenv-.a.-0.1.5 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: is-absolute
+SPDXID: SPDXRef-path-is-absolute-.a.-1.0.1
+PackageVersion: 1.0.1
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/sindresorhus/path-is-absolute
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-path-is-absolute-.a.-1.0.1 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: path-parse
+SPDXID: SPDXRef-path-parse-.a.-1.0.6
+PackageVersion: 1.0.6
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/jbgutierrez/path-parse
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-path-parse-.a.-1.0.6 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: read-installed
+SPDXID: SPDXRef-read-installed-.a.-4.0.3
+PackageVersion: 4.0.3
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/isaacs/read-installed
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-read-installed-.a.-4.0.3 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: package-json
+SPDXID: SPDXRef-read-package-json-.a.-2.0.13
+PackageVersion: 2.0.13
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/npm/read-package-json
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-read-package-json-.a.-2.0.13 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: scoped-modules
+SPDXID: SPDXRef-readdir-scoped-modules-.a.-1.0.2
+PackageVersion: 1.0.2
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/npm/readdir-scoped-modules
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-readdir-scoped-modules-.a.-1.0.2 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: resolve
+SPDXID: SPDXRef-resolve-.a.-1.10.0
+PackageVersion: 1.10.0
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/browserify/resolve
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-resolve-.a.-1.10.0 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: semver
+SPDXID: SPDXRef-semver-.a.-5.7.0
+PackageVersion: 5.7.0
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/npm/node-semver
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-semver-.a.-5.7.0 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: slash
+SPDXID: SPDXRef-slash-.a.-1.0.0
+PackageVersion: 1.0.0
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/sindresorhus/slash
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-slash-.a.-1.0.0 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: slide
+SPDXID: SPDXRef-slide-.a.-1.1.6
+PackageVersion: 1.1.6
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/isaacs/slide-flow-control
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-slide-.a.-1.1.6 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: spdx-compare
+SPDXID: SPDXRef-spdx-compare-.a.-1.0.0
+PackageVersion: 1.0.0
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/kemitchell/spdx-compare.js
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-spdx-compare-.a.-1.0.0 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: spdx-correct
+SPDXID: SPDXRef-spdx-correct-.a.-3.1.0
+PackageVersion: 3.1.0
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/jslicense/spdx-correct.js
+PackageLicenseConcluded: Apache-2.0
+PackageLicenseDeclared: Apache-2.0
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-spdx-correct-.a.-3.1.0 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: spdx-exceptions
+SPDXID: SPDXRef-spdx-exceptions-.a.-2.2.0
+PackageVersion: 2.2.0
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/kemitchell/spdx-exceptions.json
+PackageLicenseConcluded: CC-BY-3.0
+PackageLicenseDeclared: CC-BY-3.0
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-spdx-exceptions-.a.-2.2.0 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: expression-parse
+SPDXID: SPDXRef-spdx-expression-parse-.a.-3.0.0
+PackageVersion: 3.0.0
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/jslicense/spdx-expression-parse.js
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-spdx-expression-parse-.a.-3.0.0 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: license-ids
+SPDXID: SPDXRef-spdx-license-ids-.a.-3.0.4
+PackageVersion: 3.0.4
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/shinnn/spdx-license-ids
+PackageLicenseConcluded: CC0-1.0
+PackageLicenseDeclared: CC0-1.0
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-spdx-license-ids-.a.-3.0.4 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: spdx-ranges
+SPDXID: SPDXRef-spdx-ranges-.a.-2.1.0
+PackageVersion: 2.1.0
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/kemitchell/spdx-ranges.js
+PackageLicenseConcluded: CC-BY-3.0
+PackageLicenseDeclared: CC-BY-3.0
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-spdx-ranges-.a.-2.1.0 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: spdx-satisfies
+SPDXID: SPDXRef-spdx-satisfies-.a.-4.0.1
+PackageVersion: 4.0.1
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/kemitchell/spdx-satisfies.js
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-spdx-satisfies-.a.-4.0.1 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: supports-color
+SPDXID: SPDXRef-supports-color-.a.-5.5.0
+PackageVersion: 5.5.0
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/chalk/supports-color
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-supports-color-.a.-5.5.0 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: treeify
+SPDXID: SPDXRef-treeify-.a.-1.1.0
+PackageVersion: 1.1.0
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/notatestuser/treeify
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-treeify-.a.-1.1.0 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: util-extend
+SPDXID: SPDXRef-util-extend-.a.-1.0.3
+PackageVersion: 1.0.3
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/isaacs/util-extend
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-util-extend-.a.-1.0.3 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: package-license
+SPDXID: SPDXRef-validate-npm-package-license-.a.-3.0.4
+PackageVersion: 3.0.4
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/kemitchell/validate-npm-package-license.js
+PackageLicenseConcluded: Apache-2.0
+PackageLicenseDeclared: Apache-2.0
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-validate-npm-package-license-.a.-3.0.4 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
+
+
+
+## Package Information  (Third Party)
+PackageName: wrappy
+SPDXID: SPDXRef-wrappy-.a.-1.0.2
+PackageVersion: 1.0.2
+PackageSupplier: NOASSERTION
+PackageOriginator: NOASSERTION
+PackageDownloadLocation: https://github.com/npm/wrappy
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+PackageCopyrightText: NOASSERTION
+Relationship: SPDXRef-wrappy-.a.-1.0.2 PACKAGE_OF SPDXRef-BIO-1.0
+FilesAnalyzed: false
