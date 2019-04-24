@@ -7,7 +7,7 @@ Its this easy:
 ```
 npm i spdxvalidator -g
 
-jarPath="spdx_jar_file_path.jar" spdxValidator
+spdxValidator jarPath "spdx_jar_file_path.jar" 
 ```
 
 
