@@ -1,11 +1,12 @@
 {
   "name": "spdxvalidator",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "validate module licence against spdx list of valid licences.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "preferGlobal": true,
   "author": "deepak.r.poojari@gmail.com",
   "license": "ISC",
   "dependencies": {

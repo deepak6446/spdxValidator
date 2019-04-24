@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const ids = require('spdx-license-ids');
 const { init } = require('license-checker');
 const { writeFileSync } = require('fs');
@@ -23,9 +25,9 @@ init({
 
             console.log("removing packages with invalid licence file")
             packages = removeInvalid(packages);
-
             // run using command 
             // jarPath=./spdx-tools-2.1.12-jar-with-dependencies spdxValidator
+
             if (process.argv && process.argv[2] && process.argv[2] == '--jarPath') {
                 jarPath = process.argv[3]
                 jarPath = resolve(process.argv[3])
