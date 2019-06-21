@@ -7,7 +7,7 @@ Its this easy:
 ```
 npm i spdxvalidator -g
 
-spdxValidator jarPath "spdx_jar_file_path.jar" 
+spdxvalidator --jarPath "spdx_jar_file_path.jar" 
 ```
 
 # Licence file can be found at [this](https://github.com/spdx/LicenseListPublisher/releases)
