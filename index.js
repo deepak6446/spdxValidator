@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const ids = require('spdx-license-ids');
+var Table = require('cli-table');
 const { init } = require('license-checker');
 const { writeFileSync } = require('fs');
 const { resolve } = require('path');
@@ -51,6 +52,11 @@ init({
 
 const removeInvalid = (packJson) => {
 
+    let table = new Table({
+        head: ['Package', 'TH 2 label']
+      , colWidths: [100, 200]
+    });
+
     let removed = false
     let allKeys = Object.keys(packJson);
     allKeys.forEach(k => {
@@ -62,7 +68,11 @@ const removeInvalid = (packJson) => {
             }
         }
     });
-    if (removed) console.log("rerun with valid licence modules")
+
+    if (removed) {
+        console.log("Removed Invalid spdx licence for module")
+        console.log("rerun with valid licence modules")
+    }
 
     return packJson
 }
@@ -137,6 +147,7 @@ const getSpdx = (json) => {
 const spdxGenerator = (licencePath) => {
     require('./spdxValidate').spdxGenerate(licencePath)
 }
+
 const writeFile = (json) => {
     console.log("json license file stored at ./license.json");
     writeFileSync('./spdxlicense.json', JSON.stringify(json, null, 2), 'utf8');

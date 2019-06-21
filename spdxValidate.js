@@ -3,7 +3,9 @@ const { resolve } = require('path');
 
 const regexp1 = /\w*\/(\w+)/;
 const regexp2 = /(\w*-?\w+?)@/;
+const licenceRegex = /^[ ]*Copyright.*$/
 const org = "organization"
+
 let text = `
 SPDXVersion: SPDX-2.1
 DataLicense: CC0-1.0
@@ -14,6 +16,7 @@ DocumentName: BIO-1.0
 Creator: Organization: ${org} (foss-compliance@${org}.com)
 Created: 2019-02-05T13:46:42Z
 `;
+
 exports.spdxGenerate = (licencePath) => {
   const endText = ``;
 
@@ -26,18 +29,18 @@ exports.spdxGenerate = (licencePath) => {
     console.log(`error while parsing json file data`, e);
     return process.exit(0);
   }
-  
+
   let allKeys = Object.keys(jsonData);
-  
-  for (let i=0;i<allKeys.length;i++) {
-      generateSPDX(jsonData[allKeys[i]], allKeys[i]);
+
+  for (let i = 0; i < allKeys.length; i++) {
+    generateSPDX(jsonData[allKeys[i]], allKeys[i]);
   }
 
   const finalText = text + endText;
 
   writeFileSync('./licence.spdx', finalText);
   console.log('spdx file generated @', resolve('./licence.spdx'))
-   
+
 }
 
 function generateSPDX(obj, key) {
@@ -45,6 +48,23 @@ function generateSPDX(obj, key) {
   const packageName = key.startsWith('@') ? key.match(regexp1)[1] : key.match(regexp2)[1];
   let pSpdxId = key.replace(/@/g, '-.a.-')
   let spdxId = `${pSpdxId.replace(/\//gm, '-')}`;
+
+  let copy_right_text = ""
+  if (obj['licenseFile']) {
+    let licenceText = readFileSync(obj['licenseFile'], 'utf8');
+    if (licenceText) {
+
+      let text_arr = licenceText.split("\n")
+
+      for (let text in text_arr) {
+        let match = text_arr[text].match(licenceRegex)
+        if (match && match[0]) {
+          copy_right_text = match[0].trim()
+        }
+      }
+    }
+  }
+
   spdxId = 'SPDXRef-' + spdxId     // mandatory
   let packageSPDX = `
     PackageName: ${packageName}
@@ -55,7 +75,7 @@ function generateSPDX(obj, key) {
     PackageDownloadLocation: ${obj['repository']}
     PackageLicenseConcluded: ${obj['licenses']}
     PackageLicenseDeclared: ${obj['licenses']}
-    PackageCopyrightText: ${obj['copyright'] ? '<text>' + obj['copyright'] + '</text>' : 'NOASSERTION'}
+    PackageCopyrightText: ${copy_right_text ? copy_right_text : 'NOASSERTION'}
     Relationship: ${spdxId} PACKAGE_OF SPDXRef-BIO-1.0
     FilesAnalyzed: false
     `
