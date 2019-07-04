@@ -73,9 +73,9 @@ const removeInvalid = (packJson) => {
     });
 
     if (removed) {
-        console.log("Removed Invalid spdx licence for module")
+        console.log("\n\nRemoved Invalid spdx licence for module")
         console.log(table.toString());
-        console.log("Rerun with valid licence modules")
+        console.log("\n\nRerun with valid licence modules\n\n")
     }
 
     packJson = removePackagesFromScan(packJson)
@@ -88,7 +88,7 @@ const removePackagesFromScan = (packJson) => {
     var data = fs.readFileSync('./scan.json', "utf8")
 
     if (!data) return
-    else console.log("scan file found")
+    else console.log("\n\nscan file found")
 
     var dataArr = JSON.parse(data).files
     let uniqueArr = []
@@ -106,15 +106,33 @@ const removePackagesFromScan = (packJson) => {
     }
 
     var unique = uniqueArr.filter(uniqueArray);
+    
+    display(unique, packJson)
+
+    return packJson
+}
+
+const display = (unique, packJson) => {
+    let table = new Table({
+        head: ['Package', 'Action']
+        , colWidths: [40, 60]
+    });
+
+    let removed = false
 
     for (key in packJson) {
         if (unique.indexOf(packJson[key].licenseFile) == -1) {
-            console.log(`100% licence not matched in ${key}, removed`)
+            removed =  true
+            table.push([key, 'removed'])
             delete packJson[key]
         }
     }
 
-    return packJson
+    if (removed) {
+        console.log(`\n\n100% licence not matched in ${key}, removed`)
+        console.log(table.toString());
+        console.log('\n\n')
+    }
 }
 const getSpdx = (json) => {
     console.log("genertating spdx file")
@@ -209,5 +227,5 @@ const trimLicence = (licence, sep) => {
 }
 
 process.on('exit', () => {
-    console.log("validation completed!!!!")
+    console.log("\n\nvalidation completed!!!!")
 })

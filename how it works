@@ -23,10 +23,15 @@
 
 5) GENERATE VALID SPDX FILE
     a. read ./spdxlicense.json and for each json repeat b
-    b. 
+    b. getting copy right text
+        for each json in ./spdxlicense.json read licence file form licence Path and copy right text (@copyright)
+        store copy right text in json for each json in ./spdxlicense.json
+    c. generate .spdx file
+        1.  packageName = name of npm module
+        2.  store package info
+        3.  for a packageName store licenseFile info in File Information
+        4.  for each dependency for packageName in package-locak.json store File Information
+
 
 6) VALIDATE SPDX USING JAR FILE
     a.  using child process validate spdx file
-
-
-    

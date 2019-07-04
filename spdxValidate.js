@@ -4,7 +4,10 @@ const { resolve } = require('path');
 const regexp1 = /\w*\/(\w+)/;
 const regexp2 = /(\w*-?\w+?)@/;
 const licenceRegex = /^[ ]*Copyright.*$/
-const org = "organization"
+const spdxConfig = require(resolve('./spdxConfig.json'))
+
+const org = spdxConfig.orgName ? spdxConfig.orgName : "organization"
+const createrInfo = spdxConfig.createrInfo ? spdxConfig.createrInfo: `(foss-compliance@${org}.com)`
 
 let text = `
 SPDXVersion: SPDX-2.1
@@ -13,7 +16,7 @@ DocumentNamespace: http://${org}.com/spdx/SPDXRef-BIO-1.0-05aadas11-83ab-258fac9
 DocumentName: BIO-1.0
 
 ## Creation Information
-Creator: Organization: ${org} (foss-compliance@${org}.com)
+Creator: Organization: ${createrInfo}
 Created: 2019-02-05T13:46:42Z
 `;
 
@@ -43,11 +46,11 @@ exports.spdxGenerate = (licencePath) => {
 
   for (let i = 0; i < allKeys.length; i++) {
     try {
-      generateSPDX(jsonData[allKeys[i]], allKeys[i], jsonData);  
+      generateSPDX(jsonData[allKeys[i]], allKeys[i], jsonData);
     } catch (error) {
       console.log("err: ", error)
     }
-    
+
   }
   const finalText = text + endText;
 
@@ -55,7 +58,7 @@ exports.spdxGenerate = (licencePath) => {
   console.log('spdx file generated @', resolve('./licence.spdx'))
 
 }
-const copy_right_text = (obj) => { 
+const copy_right_text = (obj) => {
 
   let copy_right_text = ""
   if (obj['licenseFile']) {
@@ -74,7 +77,7 @@ const copy_right_text = (obj) => {
   }
   obj['copy_right_text'] = copy_right_text
 
-} 
+}
 
 function generateSPDX(obj, key, jsonObj) {
   const header = `\n\n\n## Package Information  (Third Party)\n`;
@@ -83,8 +86,8 @@ function generateSPDX(obj, key, jsonObj) {
   let spdxId = getSpdxId(key)
 
   let copy_right_text = obj['copy_right_text']
-  
-  while(unique_ids['SPDXRef-' + spdxId] != undefined) {
+
+  while (unique_ids['SPDXRef-' + spdxId] != undefined) {
     spdxId = spdxId + String(Math.random())
   }
 
@@ -92,7 +95,7 @@ function generateSPDX(obj, key, jsonObj) {
 
   if (!unique_ids['SPDXRef-' + spdxId]) {
     unique_ids['SPDXRef-' + spdxId] = true
-  }else {
+  } else {
     if (!unique_ids['SPDXRef-' + spdxId]) {
       unique_ids['SPDXRef-' + spdxId] = true
     }
@@ -118,14 +121,13 @@ function generateSPDX(obj, key, jsonObj) {
   text += header;
   text += packageSPDX.replace(/^\s+/gm, '');
 
-  let licenceSpdx = getLicenceSpdx(obj)
-
-  let [licenceInfo, licence] = attachLicenceInfo(obj, licenceSpdx, copy_right_text, spdxId)
+  let licenceSpdx = getLicenceSpdx(obj) // returns SPDXRef+licence file path
+  let [licenceInfo, licence] = attachLicenceInfo(obj, licenceSpdx, copy_right_text, spdxId, packageName)
 
   text += licenceInfo
   text += licence.replace(/^\s+/gm, '');
 
-  attachFileInfo(key, obj, licenceSpdx, copy_right_text, spdxId, jsonObj)
+  attachFileInfo(key, spdxId, jsonObj, packageName)
 }
 
 const getSpdxId = (key) => {
@@ -143,9 +145,13 @@ const getLicenceSpdx = (obj) => {
   return licenceSpdx
 }
 
-const attachLicenceInfo = (obj, licenceSpdx, copy_right_text, spdxId) => {
-  
-  while(unique_ids[licenceSpdx] != undefined) {
+/**
+ * add only licence file info of package for all dependency packages info see attachFileInfo
+*/
+const attachLicenceInfo = (obj, licenceSpdx, copy_right_text, spdxId, packageName) => {
+
+  // SPDXID should be a unique number
+  while (unique_ids[licenceSpdx] != undefined) {
     licenceSpdx = licenceSpdx + String(Math.random())
   }
 
@@ -162,30 +168,32 @@ const attachLicenceInfo = (obj, licenceSpdx, copy_right_text, spdxId) => {
   FileChecksum: SHA1: d6a770ba38583ed4bb4525bd96e50461655d2758
   Relationship: ${spdxId} CONTAINS ${licenceSpdx}
   `
+
   return [licenceInfo, licence]
 
 }
 
-const attachFileInfo = (key, obj, licenceSpdx, copy_right_text, spdxId, jsonObj) => {
+const attachFileInfo = (key, spdxId, jsonObj, packageName) => {
 
   key = key.substr(0, key.lastIndexOf('@'))
 
   if (primaryDep.indexOf(key) != -1) {
     let depenJson = packageLock.dependencies[key].dependencies
     if (!depenJson || !Object.keys(depenJson).length) return
-    
+
     let dep_key_array = Object.keys(depenJson)
 
-    for (let i=0; i<dep_key_array.length; i++) {
-      
-      let dep_key = dep_key_array[i] + "@"+ depenJson[dep_key_array[i]].version
+    for (let i = 0; i < dep_key_array.length; i++) {
 
-      if (primaryDep.indexOf(dep_key_array[i]) == -1 || !jsonObj[dep_key]) continue; 
-  
+      let dep_key = dep_key_array[i] + "@" + depenJson[dep_key_array[i]].version
+
+      if (primaryDep.indexOf(dep_key_array[i]) == -1 || !jsonObj[dep_key]) continue;
+
       let dep_obj = jsonObj[dep_key]
       let dep_licenceSpdx = getLicenceSpdx(dep_obj)
+
       let [fileInfo, filelicence] = attachLicenceInfo(dep_obj, dep_licenceSpdx, dep_obj['copy_right_text'], spdxId)
-  
+
       text += fileInfo
       text += filelicence.replace(/^\s+/gm, '');
 
