@@ -23,9 +23,6 @@ init({
         writeFileSync('license.json', JSON.stringify(packages, null, 2), 'utf8');
 
         try {
-
-            console.log("removing packages with invalid licence file")
-            packages = removeInvalid(packages);
             // run using command 
             // jarPath=./spdx-tools-2.1.12-jar-with-dependencies spdxValidator
 
@@ -33,11 +30,15 @@ init({
                 jarPath = process.argv[3]
                 jarPath = resolve(process.argv[3])
                 console.log("jar file path: ", jarPath)
-            }else {
+            } else {
                 console.log("please specify jar path using --jarPath 'location'")
                 process.exit(0)
             }
+
+            packages = removeInvalid(packages);
+
             console.log("storing valid License file: validLicense.json")
+
             writeFileSync('./validLicense.json', JSON.stringify(packages, null, 2), 'utf8');
 
             getSpdx(packages);
@@ -52,9 +53,11 @@ init({
 
 const removeInvalid = (packJson) => {
 
+    console.log("removing packages with invalid licence file")
+
     let table = new Table({
-        head: ['Package', 'TH 2 label']
-      , colWidths: [100, 200]
+        head: ['Package', 'Reason']
+        , colWidths: [40, 60]
     });
 
     let removed = false
@@ -63,7 +66,7 @@ const removeInvalid = (packJson) => {
         if (typeof packJson[k] === 'object' && !Array.isArray(packJson[k])) {
             if (!ids.includes(packJson[k].licenses)) {
                 removed = true
-                console.log("Removed Invalid spdx licence for module", k, ", licence found:", packJson[k].licenses)
+                table.push([k, `licence found: ${packJson[k].licenses}`])
                 delete packJson[k]
             }
         }
@@ -71,18 +74,54 @@ const removeInvalid = (packJson) => {
 
     if (removed) {
         console.log("Removed Invalid spdx licence for module")
-        console.log("rerun with valid licence modules")
+        console.log(table.toString());
+        console.log("Rerun with valid licence modules")
     }
+
+    packJson = removePackagesFromScan(packJson)
 
     return packJson
 }
 
+const removePackagesFromScan = (packJson) => {
+    var fs = require('fs')
+    var data = fs.readFileSync('./scan.json', "utf8")
+
+    if (!data) return
+    else console.log("scan file found")
+
+    var dataArr = JSON.parse(data).files
+    let uniqueArr = []
+    for (i = 0; i < dataArr.length; i++) {
+        if (!dataArr[i].licenses.length) continue
+        for (var j = 0; j < dataArr[i].licenses.length; j++) {
+            if (dataArr[i].licenses[j].score == 100) {
+                uniqueArr.push(resolve(dataArr[i].path))
+            }
+        }
+    }
+
+    const uniqueArray = (val, index, self) => {
+        return self.indexOf(val) === index;
+    }
+
+    var unique = uniqueArr.filter(uniqueArray);
+
+    for (key in packJson) {
+        if (unique.indexOf(packJson[key].licenseFile) == -1) {
+            console.log(`100% licence not matched in ${key}, removed`)
+            delete packJson[key]
+        }
+    }
+
+    return packJson
+}
 const getSpdx = (json) => {
     console.log("genertating spdx file")
+    
     Object.keys(json).forEach((key) => {
 
         let licence = json[key].licenses
-        // console.log("=---------------__>", licence)
 
         if (Array.isArray(licence)) {
             licence = licence[0]
@@ -92,7 +131,6 @@ const getSpdx = (json) => {
 
             let packLicence = licenceFromPackage(json[key]["path"])
             if (packLicence) {
-                // console.log(`licence changed from ${json[key]['licenses']} to ${packLicence} for ${key}`);
                 json[key]['licenses'] = packLicence
             } else if (licence == "Apache License, Version 2.0") {
                 json[key]['licenses'] = "Apache-2.0"
@@ -104,13 +142,11 @@ const getSpdx = (json) => {
 
             let packLicence = licenceFromPackage(json[key]["path"])
             if (packLicence) {
-                // console.log(`licence changed from ${json[key]['licenses']} to ${packLicence} for ${key}`);
                 json[key]['licenses'] = packLicence
             } else {
                 let index = licence.indexOf("OR")
                 if (index == -1) { index = licence.indexOf("AND") }
                 packLicence = licence.slice(licence.indexOf("(") + 1, index - 1)
-                // console.log(`licence changed from ${json[key]['licenses']} to ${packLicence} for ${key}`);
                 json[key]['licenses'] = packLicence
             }
         }
@@ -119,14 +155,12 @@ const getSpdx = (json) => {
 
             let packLicence = licenceFromPackage(json[key]["path"])
             if (!packLicence || packLicence == licence) console.log(`error: licence not found for ${key}`);
-            // else console.log(`licence changed from ${json[key]['licenses']} to ${packLicence} for ${key}`);
             json[key]['licenses'] = packLicence
 
         } else if (licence.lastIndexOf('*') == (licence.length - 1)) {
 
             let packLicence = licenceFromPackage(json[key]["path"])
             if (!packLicence) { packLicence = trimLicence(licence, "*") }
-            // console.log(`licence changed from ${json[key]['licenses']} to ${packLicence} for ${key}`);
             json[key]['licenses'] = packLicence
 
         } else if (licence.startsWith("Custom:")) {
@@ -149,7 +183,7 @@ const spdxGenerator = (licencePath) => {
 }
 
 const writeFile = (json) => {
-    console.log("json license file stored at ./license.json");
+    console.log("json license file stored at ./spdxlicense.json");
     writeFileSync('./spdxlicense.json', JSON.stringify(json, null, 2), 'utf8');
 }
 
@@ -174,6 +208,6 @@ const trimLicence = (licence, sep) => {
     return cha
 }
 
-process.on('exit', ()=>{
+process.on('exit', () => {
     console.log("validation completed!!!!")
 })

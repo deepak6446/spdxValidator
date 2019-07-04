@@ -10,6 +10,7 @@
   "author": "deepak.r.poojari@gmail.com",
   "license": "ISC",
   "dependencies": {
+    "cli-table": "^0.3.1",
     "license-checker": "25.0.1",
     "spdx-license-ids": "3.0.4"
   },

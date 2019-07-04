@@ -1,0 +1,32 @@
+1) GENERATE LICENSE FILE
+    a.  use license-checker to get all license path info 
+        store below json in license.json 
+        "abbrev@1.1.1": {
+            "licenses": "ISC",
+            "repository": "https://github.com/isaacs/abbrev-js",
+            "publisher": "Isaac Z. Schlueter",
+            "email": "i@izs.me",
+            "path": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/abbrev",
+            "licenseFile": "/home/gis-local/Desktop/built.io/deepakWork/spdxValidator/node_modules/abbrev/LICENSE"
+        }  
+
+2) REMOVE INVALID LICENSE
+    a.  use spdx-license-ids package to remove package in which license file is not valid as per spdx-license
+    b   if scan.json file is present
+            check licence in scan.json remove license file which has a score of less than 100 %
+
+3) STORE VALID LICENSE FILE in validLicense.json
+
+4) FILTER INVALID LICENSE NAME
+    for each json in validLicense.json
+    a.correct licence name and write file to ./spdxlicense.json
+
+5) GENERATE VALID SPDX FILE
+    a. read ./spdxlicense.json and for each json repeat b
+    b. 
+
+6) VALIDATE SPDX USING JAR FILE
+    a.  using child process validate spdx file
+
+
+    
