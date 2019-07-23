@@ -19,8 +19,10 @@ Include scan.json if you want to exclude licence that contains less than 100% ma
 # Org name and creater in spdxConfig.json 
 ```
 {
-    "orgName": "org name", 
-    "createrInfo": "webinfo@org.com"
+    "orgName": "org name",
+    "createrInfo": "webinfo@org.com",
+    "title": "org title",
+    "downloadLocation": "PackageDownloadLocation"
 }
 ```
 

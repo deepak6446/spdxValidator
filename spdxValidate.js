@@ -8,17 +8,45 @@ const spdxConfig = require(resolve('./spdxConfig.json'))
 
 const org = spdxConfig.orgName ? spdxConfig.orgName : "organization"
 const createrInfo = spdxConfig.createrInfo ? spdxConfig.createrInfo: `(foss-compliance@${org}.com)`
+const title = spdxConfig.title ? spdxConfig.title: "organization title"
+const downloadLocation = spdxConfig.downloadLocation ? spdxConfig.downloadLocation: "http://empower.orgname.com"
+
 
 let text = `
 SPDXVersion: SPDX-2.1
 DataLicense: CC0-1.0
-DocumentNamespace: http://${org}.com/spdx/SPDXRef-BIO-1.0-05aadas11-83ab-258fac9fb4d3
+DocumentNamespace: http://${org}/spdx/SPDXRef-BIO-1.0-05aadas11-83ab-258fac9fb4d3
 DocumentName: BIO-1.0
 
 ## Creation Information
-Creator: Organization: ${createrInfo}
+Creator: Organization: ${title} (${createrInfo})
 Created: 2019-02-05T13:46:42Z
+
+## Relationships
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-BIO-1.0
+ 
+## Package Information (Supplier)
+PackageName: BIO
+SPDXID: SPDXRef-BIO-1.0
+PackageVersion: 1.0
+PackageSupplier: Organization: ${title}
+PackageOriginator: Organization: ${title}
+PackageDownloadLocation: ${downloadLocation}
+PackageLicenseConcluded: LicenseRef-${title.replace(/ /g, "-")}-Commercial-License
+PackageLicenseDeclared: LicenseRef-${title.replace(/ /g, "-")}-Commercial-License
+PackageCopyrightText: <text>(c) Copyright 2019 Software AG, Darmstadt, Germany and/or Software AG USA
+Inc., Reston, VA, USA and/or its subsidiaries and/or its affiliates and/or
+their licensors.</text>
+FilesAnalyzed: false
+
+## License Information
+LicenseID: LicenseRef-${title.replace(/ /g, "-")}-Commercial-License
+LicenseName: Software AG Commercial License
+ExtractedText: <text>Use, reproduction, transfer, publication or disclosure is prohibited except as specifically provided for in your License Agreement with Software AG.</text>
+
 `;
+
+
 
 let unique_ids = {}
 

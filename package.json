@@ -1,6 +1,6 @@
 {
   "name": "spdxvalidator",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "validate module licence against spdx list of valid licences.",
   "main": "index.js",
   "scripts": {
